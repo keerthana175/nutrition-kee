@@ -1,0 +1,116 @@
+.how-section1{
+  margin-top:-10%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+.how-section1 .subheading{
+  color: #3931af;
+  font-size: 20px;
+}
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img 
+{
+  text-align: center;
+}
+.how-img img{
+  width: 40%;
+}
+
+
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.subheading{
+  font-style:oblique;
+    }
+  
+    .checked {
+      color: orange;
+    }
+  
+    .veg {
+      background-color: rgb(26, 120, 26);
+      color: white;
+      padding: 2px 4px;
+      text-align: center;
+      border-radius: 5px;
+    }
+  
+    .nonveg {
+      background-color: rgb(206, 62, 62);
+      color: white;
+      padding: 4px 8px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    
+  
+    ol {
+      list-style: none;
+      counter-reset: steps;
+    }
+    ol li {
+      counter-increment: steps;
+    }
+    ol li::before {
+      content: counter(steps);
+      margin-right: 0.5rem;
+      background: #ff6f00;
+      color: white;
+      width: 1.2em;
+      height: 1.2em;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      line-height: 1.2em;
+    }
+  
+
+
+
+    .nutr  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 100%;
+      margin: 0;
+      background: url("images/bgg.jpg"); /* change image here */
+      background-position: 50%;
+    }
+
+    .inside {
+      position: relative;
+      height: 50%;
+      width: 70%;
+      font: 1em Arial;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .25);
+      
+    }
+    
+    .inside::before {
+      content: "";
+      position: absolute;
+      top: -16px; /* -blur */ 
+      left: -16px; /* -blur */
+      width: calc(100% + 32px); /* 100% + blur * 2 */
+      height: calc(100% + 32px); /* 100% + blur * 2 */
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/bgg.jpg"); /* change color or image here */
+      background-position: 50%;
+      filter: blur(5px);
+      z-index: -1;
+    }
+
+  
